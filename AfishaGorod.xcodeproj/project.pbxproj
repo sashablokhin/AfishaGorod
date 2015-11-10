@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABE7D9611BF1DC7C00996ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7D9601BF1DC7C00996ACC /* AppDelegate.swift */; };
+		ABE7D9631BF1DC7C00996ACC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7D9621BF1DC7C00996ACC /* MainViewController.swift */; };
+		ABE7D9661BF1DC7C00996ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE7D9641BF1DC7C00996ACC /* Main.storyboard */; };
+		ABE7D9691BF1DC7C00996ACC /* AfishaGorod.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABE7D9671BF1DC7C00996ACC /* AfishaGorod.xcdatamodeld */; };
+		ABE7D96E1BF1DC7C00996ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE7D96C1BF1DC7C00996ACC /* LaunchScreen.storyboard */; };
+		ABE7D9761BF1E79C00996ACC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE7D9751BF1E79C00996ACC /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		ABE7D97C1BF1F14100996ACC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE7D97B1BF1F14100996ACC /* SWRevealViewController.m */; settings = {ASSET_TAGS = (); }; };
+		ABE7D97F1BF1F9E900996ACC /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7D97E1BF1F9E900996ACC /* MenuTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ABE7D95D1BF1DC7C00996ACC /* AfishaGorod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfishaGorod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE7D9601BF1DC7C00996ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABE7D9621BF1DC7C00996ACC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ABE7D9651BF1DC7C00996ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABE7D9681BF1DC7C00996ACC /* AfishaGorod.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AfishaGorod.xcdatamodel; sourceTree = "<group>"; };
+		ABE7D96D1BF1DC7C00996ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABE7D96F1BF1DC7C00996ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABE7D9751BF1E79C00996ACC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		ABE7D9791BF1F14000996ACC /* AfishaGorod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AfishaGorod-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABE7D97A1BF1F14100996ACC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		ABE7D97B1BF1F14100996ACC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		ABE7D97E1BF1F9E900996ACC /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABE7D95A1BF1DC7C00996ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABE7D9541BF1DC7C00996ACC = {
+			isa = PBXGroup;
+			children = (
+				ABE7D95F1BF1DC7C00996ACC /* AfishaGorod */,
+				ABE7D95E1BF1DC7C00996ACC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABE7D95E1BF1DC7C00996ACC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABE7D95D1BF1DC7C00996ACC /* AfishaGorod.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABE7D95F1BF1DC7C00996ACC /* AfishaGorod */ = {
+			isa = PBXGroup;
+			children = (
+				ABE7D9601BF1DC7C00996ACC /* AppDelegate.swift */,
+				ABE7D9621BF1DC7C00996ACC /* MainViewController.swift */,
+				ABE7D97E1BF1F9E900996ACC /* MenuTableViewController.swift */,
+				ABE7D9641BF1DC7C00996ACC /* Main.storyboard */,
+				ABE7D96C1BF1DC7C00996ACC /* LaunchScreen.storyboard */,
+				ABE7D97D1BF1F15700996ACC /* Supporting Files */,
+				ABE7D9751BF1E79C00996ACC /* Images.xcassets */,
+				ABE7D9671BF1DC7C00996ACC /* AfishaGorod.xcdatamodeld */,
+			);
+			path = AfishaGorod;
+			sourceTree = "<group>";
+		};
+		ABE7D97D1BF1F15700996ACC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABE7D96F1BF1DC7C00996ACC /* Info.plist */,
+				ABE7D97B1BF1F14100996ACC /* SWRevealViewController.m */,
+				ABE7D97A1BF1F14100996ACC /* SWRevealViewController.h */,
+				ABE7D9791BF1F14000996ACC /* AfishaGorod-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABE7D95C1BF1DC7C00996ACC /* AfishaGorod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABE7D9721BF1DC7C00996ACC /* Build configuration list for PBXNativeTarget "AfishaGorod" */;
+			buildPhases = (
+				ABE7D9591BF1DC7C00996ACC /* Sources */,
+				ABE7D95A1BF1DC7C00996ACC /* Frameworks */,
+				ABE7D95B1BF1DC7C00996ACC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AfishaGorod;
+			productName = AfishaGorod;
+			productReference = ABE7D95D1BF1DC7C00996ACC /* AfishaGorod.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABE7D9551BF1DC7C00996ACC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Alexander Blokhin";
+				TargetAttributes = {
+					ABE7D95C1BF1DC7C00996ACC = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = ABE7D9581BF1DC7C00996ACC /* Build configuration list for PBXProject "AfishaGorod" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABE7D9541BF1DC7C00996ACC;
+			productRefGroup = ABE7D95E1BF1DC7C00996ACC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABE7D95C1BF1DC7C00996ACC /* AfishaGorod */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABE7D95B1BF1DC7C00996ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE7D9761BF1E79C00996ACC /* Images.xcassets in Resources */,
+				ABE7D96E1BF1DC7C00996ACC /* LaunchScreen.storyboard in Resources */,
+				ABE7D9661BF1DC7C00996ACC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABE7D9591BF1DC7C00996ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE7D9691BF1DC7C00996ACC /* AfishaGorod.xcdatamodeld in Sources */,
+				ABE7D9631BF1DC7C00996ACC /* MainViewController.swift in Sources */,
+				ABE7D97F1BF1F9E900996ACC /* MenuTableViewController.swift in Sources */,
+				ABE7D9611BF1DC7C00996ACC /* AppDelegate.swift in Sources */,
+				ABE7D97C1BF1F14100996ACC /* SWRevealViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ABE7D9641BF1DC7C00996ACC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABE7D9651BF1DC7C00996ACC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ABE7D96C1BF1DC7C00996ACC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABE7D96D1BF1DC7C00996ACC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABE7D9701BF1DC7C00996ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABE7D9711BF1DC7C00996ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABE7D9731BF1DC7C00996ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = AfishaGorod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jampps.AfishaGorod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AfishaGorod/AfishaGorod-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABE7D9741BF1DC7C00996ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = AfishaGorod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jampps.AfishaGorod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AfishaGorod/AfishaGorod-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABE7D9581BF1DC7C00996ACC /* Build configuration list for PBXProject "AfishaGorod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE7D9701BF1DC7C00996ACC /* Debug */,
+				ABE7D9711BF1DC7C00996ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABE7D9721BF1DC7C00996ACC /* Build configuration list for PBXNativeTarget "AfishaGorod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE7D9731BF1DC7C00996ACC /* Debug */,
+				ABE7D9741BF1DC7C00996ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ABE7D9671BF1DC7C00996ACC /* AfishaGorod.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ABE7D9681BF1DC7C00996ACC /* AfishaGorod.xcdatamodel */,
+			);
+			currentVersion = ABE7D9681BF1DC7C00996ACC /* AfishaGorod.xcdatamodel */;
+			path = AfishaGorod.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ABE7D9551BF1DC7C00996ACC /* Project object */;
+}
