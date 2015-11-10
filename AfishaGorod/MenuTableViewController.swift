@@ -15,7 +15,7 @@ class MenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menuItems = ["Главная", "Перемены", "Люди", "Дома", "Еда", "Вещи", "Развлечения"]
+        //menuItems = ["Главная", "Перемены", "Люди", "Дома", "Еда", "Вещи", "Развлечения"]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -35,20 +35,20 @@ class MenuTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+/*
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return menuItems.count
-    }
+        return tableView.numberOfRowsInSection(section)//menuItems.count
+    }*/
 
-    
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
 
         cell.textLabel?.text = menuItems[indexPath.row]
 
         return cell
-    }
+    }*/
     
 
     /*
