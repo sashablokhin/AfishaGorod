@@ -33,8 +33,7 @@ class MainViewController: UIViewController {
         view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         view.addGestureRecognizer(revealViewController().tapGestureRecognizer())
         
-        revealViewController().extendsPointInsideHit = true
-        //revealViewController().bounceBackOnLeftOverdraw = true
+        revealViewController().rearViewRevealWidth = 130
     }
 
     override func didReceiveMemoryWarning() {

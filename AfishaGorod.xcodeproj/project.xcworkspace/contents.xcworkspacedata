@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AfishaGorod.xcodeproj">
+      location = "self:/Users/sashajam/Portfolio/Swift /AfishaGorod/AfishaGorod.xcodeproj">
    </FileRef>
 </Workspace>
