@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB27AE9D1BFA275200863AA6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27AE9C1BFA275200863AA6 /* Post.swift */; settings = {ASSET_TAGS = (); }; };
+		AB27AEA01BFA2E4700863AA6 /* SuperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27AE9F1BFA2E4700863AA6 /* SuperTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		AB27AEA21BFA2E7200863AA6 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27AEA11BFA2E7200863AA6 /* ItemTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		AB27AEA41BFA610600863AA6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27AEA31BFA610600863AA6 /* Extensions.swift */; settings = {ASSET_TAGS = (); }; };
+		AB27AEA61BFB538E00863AA6 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27AEA51BFB538E00863AA6 /* MainTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ABE7D9611BF1DC7C00996ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7D9601BF1DC7C00996ACC /* AppDelegate.swift */; };
-		ABE7D9631BF1DC7C00996ACC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7D9621BF1DC7C00996ACC /* MainViewController.swift */; };
 		ABE7D9661BF1DC7C00996ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE7D9641BF1DC7C00996ACC /* Main.storyboard */; };
 		ABE7D9691BF1DC7C00996ACC /* AfishaGorod.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABE7D9671BF1DC7C00996ACC /* AfishaGorod.xcdatamodeld */; };
 		ABE7D96E1BF1DC7C00996ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE7D96C1BF1DC7C00996ACC /* LaunchScreen.storyboard */; };
@@ -18,9 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB27AE9C1BFA275200863AA6 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AB27AE9F1BFA2E4700863AA6 /* SuperTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperTableViewCell.swift; sourceTree = "<group>"; };
+		AB27AEA11BFA2E7200863AA6 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		AB27AEA31BFA610600863AA6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AB27AEA51BFB538E00863AA6 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		ABE7D95D1BF1DC7C00996ACC /* AfishaGorod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfishaGorod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE7D9601BF1DC7C00996ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABE7D9621BF1DC7C00996ACC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ABE7D9651BF1DC7C00996ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABE7D9681BF1DC7C00996ACC /* AfishaGorod.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AfishaGorod.xcdatamodel; sourceTree = "<group>"; };
 		ABE7D96D1BF1DC7C00996ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +51,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB27AE9B1BFA272B00863AA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB27AE9C1BFA275200863AA6 /* Post.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AB27AE9E1BFA2D6300863AA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB27AE9F1BFA2E4700863AA6 /* SuperTableViewCell.swift */,
+				AB27AEA11BFA2E7200863AA6 /* ItemTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		ABE7D9541BF1DC7C00996ACC = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +87,10 @@
 		ABE7D95F1BF1DC7C00996ACC /* AfishaGorod */ = {
 			isa = PBXGroup;
 			children = (
+				AB27AE9E1BFA2D6300863AA6 /* Views */,
+				AB27AE9B1BFA272B00863AA6 /* Models */,
 				ABE7D9601BF1DC7C00996ACC /* AppDelegate.swift */,
-				ABE7D9621BF1DC7C00996ACC /* MainViewController.swift */,
+				AB27AEA51BFB538E00863AA6 /* MainTableViewController.swift */,
 				ABE7D97E1BF1F9E900996ACC /* MenuTableViewController.swift */,
 				ABE7D9641BF1DC7C00996ACC /* Main.storyboard */,
 				ABE7D96C1BF1DC7C00996ACC /* LaunchScreen.storyboard */,
@@ -81,6 +108,7 @@
 				ABE7D97B1BF1F14100996ACC /* SWRevealViewController.m */,
 				ABE7D97A1BF1F14100996ACC /* SWRevealViewController.h */,
 				ABE7D9791BF1F14000996ACC /* AfishaGorod-Bridging-Header.h */,
+				AB27AEA31BFA610600863AA6 /* Extensions.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,10 +185,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE7D9691BF1DC7C00996ACC /* AfishaGorod.xcdatamodeld in Sources */,
-				ABE7D9631BF1DC7C00996ACC /* MainViewController.swift in Sources */,
+				AB27AEA41BFA610600863AA6 /* Extensions.swift in Sources */,
 				ABE7D97F1BF1F9E900996ACC /* MenuTableViewController.swift in Sources */,
+				AB27AE9D1BFA275200863AA6 /* Post.swift in Sources */,
+				AB27AEA21BFA2E7200863AA6 /* ItemTableViewCell.swift in Sources */,
 				ABE7D9611BF1DC7C00996ACC /* AppDelegate.swift in Sources */,
 				ABE7D97C1BF1F14100996ACC /* SWRevealViewController.m in Sources */,
+				AB27AEA61BFB538E00863AA6 /* MainTableViewController.swift in Sources */,
+				AB27AEA01BFA2E4700863AA6 /* SuperTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +345,7 @@
 				ABE7D9741BF1DC7C00996ACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
