@@ -56,8 +56,6 @@ class MainTableViewController: UITableViewController {
         if url != nil {
             let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
                 
-                //var urlError = false
-                
                 if error == nil {
                     
                     let content = NSString(data: data!, encoding: NSUTF8StringEncoding) as NSString!
@@ -68,19 +66,12 @@ class MainTableViewController: UITableViewController {
                         for i in 1..<contentArray.count {
                             self.parseArticle(contentArray[i] as! String)
                         }
-                    } else {
-                        //urlError = true
                     }
                     
-                } else {
-                    //urlError = true
                 }
             })
             
             task.resume()
-            
-        } else {
-            //showError()
         }
     }
     
@@ -155,6 +146,13 @@ class MainTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        if posts[indexPath.row].article == Article.Super {
+            return 200
+        } else if posts[indexPath.row].article == Article.Item {
+            return 170
+        }
+        
         return 200
     }
     
@@ -167,7 +165,7 @@ class MainTableViewController: UITableViewController {
             
             return cell
         } else if posts[indexPath.row].article == Article.Item {
-            let cell = tableView.dequeueReusableCellWithIdentifier("itemCell", forIndexPath: indexPath) as! ItemTableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("itemCell") as! ItemTableViewCell
             
             cell.post = posts[indexPath.row]
             
@@ -175,6 +173,19 @@ class MainTableViewController: UITableViewController {
         }
         
         return UITableViewCell()
+    }
+    
+    
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        if let visibleCells = tableView.visibleCells as? [BaseTableViewCell] {
+            for parallaxCell in visibleCells {
+                
+                if parallaxCell.post?.article == Article.Super {
+                    let yOffset = ((tableView.contentOffset.y - parallaxCell.frame.origin.y) / ImageHeight) * OffsetSpeed
+                    parallaxCell.offset(CGPointMake(0.0, yOffset))
+                }
+            }
+        }
     }
 
 }

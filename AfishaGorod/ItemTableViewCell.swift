@@ -13,6 +13,9 @@ class ItemTableViewCell: BaseTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        self.postImageView.layer.cornerRadius = self.postImageView.frame.size.width / 2;
+        self.postImageView.clipsToBounds = true;
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

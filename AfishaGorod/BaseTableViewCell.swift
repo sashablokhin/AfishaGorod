@@ -8,13 +8,19 @@
 
 import UIKit
 
+let ImageHeight: CGFloat = 240.0
+let OffsetSpeed: CGFloat = 25.0
+
 class BaseTableViewCell: UITableViewCell {
 
     @IBOutlet var postImageView: UIImageView!
     @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet var titleLabel: UILabel!
     
     var post: Post? {
         didSet {
+            titleLabel.text = post!.title
+            
             loadImage()
         }
     }
@@ -39,29 +45,60 @@ class BaseTableViewCell: UITableViewCell {
                 postImageView.image = img
                 post!.image = img
             } else {
-                let request: NSURLRequest = NSURLRequest(URL: url)
-                let mainQuene = NSOperationQueue.mainQueue()
-                
                 activityIndicatorView.startAnimating()
                 
-                NSURLConnection.sendAsynchronousRequest(request, queue: mainQuene, completionHandler: { (response, data, error) -> Void in
+                let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
                     if error == nil {
                         
-                        self.activityIndicatorView.stopAnimating()
+                        let image = UIImage(data: data!)
                         
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
                             
-                            let image = UIImage(data: data!)
+                            self.activityIndicatorView.stopAnimating()
                             
                             imageCache[self.post!.img] = image
                             
                             self.postImageView.image = image
                             self.post!.image = image
-                            self.activityIndicatorView.stopAnimating()
                         })
                     }
                 })
+                
+                task.resume()
             }
         }
     }
+    
+    func offset(offset: CGPoint) {
+        postImageView.frame = CGRectOffset(self.postImageView.bounds, offset.x, offset.y)
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
