@@ -12,6 +12,7 @@
 		AB27AEA21BFA2E7200863AA6 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27AEA11BFA2E7200863AA6 /* ItemTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		AB27AEA41BFA610600863AA6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27AEA31BFA610600863AA6 /* Extensions.swift */; settings = {ASSET_TAGS = (); }; };
 		AB27AEA61BFB538E00863AA6 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27AEA51BFB538E00863AA6 /* MainTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AB27AEA81BFCC87600863AA6 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27AEA71BFCC87600863AA6 /* BaseTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		ABE7D9611BF1DC7C00996ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7D9601BF1DC7C00996ACC /* AppDelegate.swift */; };
 		ABE7D9661BF1DC7C00996ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE7D9641BF1DC7C00996ACC /* Main.storyboard */; };
 		ABE7D9691BF1DC7C00996ACC /* AfishaGorod.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABE7D9671BF1DC7C00996ACC /* AfishaGorod.xcdatamodeld */; };
@@ -27,6 +28,7 @@
 		AB27AEA11BFA2E7200863AA6 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		AB27AEA31BFA610600863AA6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AB27AEA51BFB538E00863AA6 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		AB27AEA71BFCC87600863AA6 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		ABE7D95D1BF1DC7C00996ACC /* AfishaGorod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfishaGorod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE7D9601BF1DC7C00996ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE7D9651BF1DC7C00996ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		AB27AE9E1BFA2D6300863AA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AB27AEA71BFCC87600863AA6 /* BaseTableViewCell.swift */,
 				AB27AE9F1BFA2E4700863AA6 /* SuperTableViewCell.swift */,
 				AB27AEA11BFA2E7200863AA6 /* ItemTableViewCell.swift */,
 			);
@@ -192,6 +195,7 @@
 				ABE7D9611BF1DC7C00996ACC /* AppDelegate.swift in Sources */,
 				ABE7D97C1BF1F14100996ACC /* SWRevealViewController.m in Sources */,
 				AB27AEA61BFB538E00863AA6 /* MainTableViewController.swift in Sources */,
+				AB27AEA81BFCC87600863AA6 /* BaseTableViewCell.swift in Sources */,
 				AB27AEA01BFA2E4700863AA6 /* SuperTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

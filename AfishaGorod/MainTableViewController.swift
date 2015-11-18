@@ -150,9 +150,6 @@ class MainTableViewController: UITableViewController {
         }
     }
     
-    
-    
-    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
@@ -161,96 +158,18 @@ class MainTableViewController: UITableViewController {
         return 200
     }
     
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         if posts[indexPath.row].article == Article.Super {
-            var cell = tableView.dequeueReusableCellWithIdentifier("superCell") as! SuperTableViewCell
-            
-            //cell.textLabel?.text = posts[indexPath.row].title
-            
-            
+            let cell = tableView.dequeueReusableCellWithIdentifier("superCell") as! SuperTableViewCell
+
             cell.post = posts[indexPath.row]
-            
-            if let url = NSURL(string: (cell.post?.img)!) {
-                //cell.movieTitleLabel.text = cell.movie?.title
-                cell.postImageView.image = nil
-                
-                if let img = imageCache[cell.post!.img] {
-                    cell.postImageView.image = img
-                    cell.post!.image = img
-                } else {
-                    let request: NSURLRequest = NSURLRequest(URL: url)
-                    let mainQuene = NSOperationQueue.mainQueue()
-                    
-                    //cell.activityIndicatorView.startAnimating()
-                    
-                    NSURLConnection.sendAsynchronousRequest(request, queue: mainQuene, completionHandler: { (response, data, error) -> Void in
-                        if error == nil {
-                            
-                            //cell.activityIndicatorView.stopAnimating()
-                            
-                            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                                if let cellToUpdate: SuperTableViewCell? = tableView.cellForRowAtIndexPath(indexPath) as! SuperTableViewCell? {
-                                    if cellToUpdate != nil {
-                                        
-                                        let image = UIImage(data: data!)
-                                        
-                                        imageCache[cellToUpdate!.post!.img] = image
-                                        
-                                        cellToUpdate!.postImageView.image = image
-                                        cellToUpdate!.post!.image = image
-                                        //cellToUpdate!.activityIndicatorView.stopAnimating()
-                                    }
-                                }
-                            })
-                        }
-                    })
-                }
-            }
             
             return cell
         } else if posts[indexPath.row].article == Article.Item {
-            var cell = tableView.dequeueReusableCellWithIdentifier("itemCell", forIndexPath: indexPath) as! ItemTableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("itemCell", forIndexPath: indexPath) as! ItemTableViewCell
             
             cell.post = posts[indexPath.row]
-            
-            if let url = NSURL(string: (cell.post?.img)!) {
-                //cell.movieTitleLabel.text = cell.movie?.title
-                cell.postImageView.image = nil
-                
-                if let img = imageCache[cell.post!.img] {
-                    cell.postImageView.image = img
-                    cell.post!.image = img
-                } else {
-                    let request: NSURLRequest = NSURLRequest(URL: url)
-                    let mainQuene = NSOperationQueue.mainQueue()
-                    
-                    //cell.activityIndicatorView.startAnimating()
-                    
-                    NSURLConnection.sendAsynchronousRequest(request, queue: mainQuene, completionHandler: { (response, data, error) -> Void in
-                        if error == nil {
-                            
-                            //cell.activityIndicatorView.stopAnimating()
-                            
-                            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                                if let cellToUpdate: ItemTableViewCell? = tableView.cellForRowAtIndexPath(indexPath) as! ItemTableViewCell? {
-                                    if cellToUpdate != nil {
-                                        
-                                        let image = UIImage(data: data!)
-                                        
-                                        imageCache[cellToUpdate!.post!.img] = image
-                                        
-                                        cellToUpdate!.postImageView.image = image
-                                        cellToUpdate!.post!.image = image
-                                        //cellToUpdate!.activityIndicatorView.stopAnimating()
-                                    }
-                                }
-                            })
-                        }
-                    })
-                }
-            }
             
             return cell
         }

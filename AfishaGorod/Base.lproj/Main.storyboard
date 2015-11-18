@@ -238,17 +238,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
                                             <animations/>
                                         </imageView>
+                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ZJX-9K-eUf">
+                                            <rect key="frame" x="150" y="90" width="20" height="20"/>
+                                            <animations/>
+                                        </activityIndicatorView>
                                     </subviews>
                                     <animations/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="xUn-2Y-8RU" secondAttribute="bottom" id="RkE-Gg-PPR"/>
                                         <constraint firstItem="xUn-2Y-8RU" firstAttribute="leading" secondItem="wAe-rJ-1TP" secondAttribute="leading" id="T4U-qg-2qS"/>
                                         <constraint firstItem="xUn-2Y-8RU" firstAttribute="top" secondItem="wAe-rJ-1TP" secondAttribute="top" id="aqe-gP-fUL"/>
+                                        <constraint firstItem="ZJX-9K-eUf" firstAttribute="centerY" secondItem="wAe-rJ-1TP" secondAttribute="centerY" id="iiM-sL-cPC"/>
+                                        <constraint firstItem="ZJX-9K-eUf" firstAttribute="centerX" secondItem="wAe-rJ-1TP" secondAttribute="centerX" id="u0v-Ol-3Xv"/>
                                         <constraint firstAttribute="trailing" secondItem="xUn-2Y-8RU" secondAttribute="trailing" id="xz4-1f-lpJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
+                                    <outlet property="activityIndicatorView" destination="ZJX-9K-eUf" id="RuZ-zS-ZUD"/>
                                     <outlet property="postImageView" destination="xUn-2Y-8RU" id="qhm-K0-Nlc"/>
                                 </connections>
                             </tableViewCell>
@@ -267,15 +274,21 @@
                                                 <constraint firstAttribute="width" constant="130" id="fEi-RD-wc9"/>
                                             </constraints>
                                         </imageView>
+                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ZCH-Rc-tnv">
+                                            <rect key="frame" x="63" y="76" width="20" height="20"/>
+                                            <animations/>
+                                        </activityIndicatorView>
                                     </subviews>
                                     <animations/>
                                     <constraints>
                                         <constraint firstItem="A6X-SR-ely" firstAttribute="centerY" secondItem="BcW-mI-TFB" secondAttribute="centerY" id="9kk-4U-f9b"/>
+                                        <constraint firstItem="ZCH-Rc-tnv" firstAttribute="centerY" secondItem="BcW-mI-TFB" secondAttribute="centerY" id="BcY-dQ-wB0"/>
                                         <constraint firstItem="A6X-SR-ely" firstAttribute="leading" secondItem="BcW-mI-TFB" secondAttribute="leading" constant="8" id="emC-vr-Py2"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
+                                    <outlet property="activityIndicatorView" destination="ZCH-Rc-tnv" id="Qkb-7T-bC0"/>
                                     <outlet property="postImageView" destination="A6X-SR-ely" id="fCH-mS-YvC"/>
                                 </connections>
                             </tableViewCell>
