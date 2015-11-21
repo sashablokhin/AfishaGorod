@@ -16,10 +16,34 @@ class BaseTableViewCell: UITableViewCell {
     @IBOutlet var postImageView: UIImageView!
     @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
     @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var tagLabel: UILabel!
+    @IBOutlet var viewsLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var commentsLabel: UILabel!
     
     var post: Post? {
         didSet {
-            titleLabel.text = post!.title
+            let attributedString = NSMutableAttributedString(string: post!.theme + "\n" + post!.title)
+            
+            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange(0, post!.theme.characters.count - 1))
+            
+            var color = UIColor.whiteColor()
+
+            if post!.article == Article.Item {
+                color = UIColor.blackColor()
+            }
+            
+            attributedString.addAttribute(NSForegroundColorAttributeName, value: color, range: NSMakeRange(post!.theme.characters.count, post!.title.characters.count))
+            
+            titleLabel.attributedText = attributedString
+            
+            tagLabel.text = post!.tag + "  "
+            viewsLabel.text = post!.views
+            dateLabel.text = post!.shortDateTime
+            commentsLabel.text = post!.comments
+            
+            tagLabel.layer.cornerRadius = 2;
+            tagLabel.clipsToBounds = true;
             
             loadImage()
         }

@@ -31,7 +31,7 @@ class MainTableViewController: UITableViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: menuButton)
         
         
-        let okButton: UIButton = UIButton(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
+        let okButton: UIButton = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         okButton.setImage(UIImage(named: "ok.png"), forState: UIControlState.Normal)
         //okButton.addTarget(self, action: "commitSelection", forControlEvents: UIControlEvents.TouchUpInside)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: okButton)
@@ -173,6 +173,19 @@ class MainTableViewController: UITableViewController {
         }
         
         return UITableViewCell()
+    }
+    
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let post = posts[indexPath.row]
+        self.performSegueWithIdentifier("toPostDetail", sender: post)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toPostDetail" {
+            let vc = segue.destinationViewController as! PostDetailViewController
+            vc.post = sender as! Post?
+        }
     }
     
     

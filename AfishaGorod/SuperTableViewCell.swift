@@ -8,7 +8,10 @@
 
 import UIKit
 
+
 class SuperTableViewCell: BaseTableViewCell {
+    
+    @IBOutlet var titleView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
