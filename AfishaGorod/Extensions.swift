@@ -10,6 +10,12 @@ import Foundation
 
 extension String {
     mutating func valueForTag(tag: String, close: String) -> String {
+        
+        //print(tag)
+        //print(close)
+        //print(self)
+        //print("------")
+        
         let start = self.rangeOfString(tag)?.endIndex
         
         self = self.substringFromIndex(start!)

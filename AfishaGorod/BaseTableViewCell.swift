@@ -23,9 +23,9 @@ class BaseTableViewCell: UITableViewCell {
     
     var post: Post? {
         didSet {
-            let attributedString = NSMutableAttributedString(string: post!.theme + "\n" + post!.title)
+            let attributedString = NSMutableAttributedString(string: post!.theme + (post!.theme != "" ? "\n" : "") +  post!.title)
             
-            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange(0, post!.theme.characters.count - 1))
+            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange(0, post!.theme.characters.count))
             
             var color = UIColor.whiteColor()
 

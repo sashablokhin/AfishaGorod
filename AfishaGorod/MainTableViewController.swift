@@ -82,7 +82,8 @@ class MainTableViewController: UITableViewController {
                 
                 let link = article.valueForTag("<a href=\"", close: "\"")
                 let title = article.valueForTag("title=\"", close: "\"")
-                let img = article.valueForTag("data-src1=\"", close: "\"")
+                //let img = article.valueForTag("data-src1=\"", close: "\"")
+                let img = article.valueForTag("<img src=\"", close: "\"")
                 let theme = article.valueForTag("article_theme\">", close: "</span>")
                 let views = article.valueForTag("article-info_views\">", close: "</span>")
                 let comments = article.valueForTag("article-info_comments\">", close: "</span>")
@@ -94,6 +95,7 @@ class MainTableViewController: UITableViewController {
                 let post = Post(article: Article.Super, link: link, title: title, img: img, theme: theme, views: views, comments: comments, tag: tag, datetime: datetime, fullDateTime: fullDateTime, shortDateTime: shortDateTime)
                 
                 posts.append(post)
+                
                 /*
                 print(link)
                 print(title)
@@ -150,7 +152,7 @@ class MainTableViewController: UITableViewController {
         if posts[indexPath.row].article == Article.Super {
             return 200
         } else if posts[indexPath.row].article == Article.Item {
-            return 170
+            return 180
         }
         
         return 200
@@ -160,7 +162,7 @@ class MainTableViewController: UITableViewController {
         
         if posts[indexPath.row].article == Article.Super {
             let cell = tableView.dequeueReusableCellWithIdentifier("superCell") as! SuperTableViewCell
-
+            
             cell.post = posts[indexPath.row]
             
             return cell
